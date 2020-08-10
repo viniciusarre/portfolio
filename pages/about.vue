@@ -1,13 +1,13 @@
 <template>
   <v-layout
-    column
+    row
     justify-center
     align-center
   >
-    <v-flex>
-      <div class="text-center mb-2">
-        <img src="/profile.png" class="profile">
-      </div>
+    <div class="text-center mb-2">
+      <img src="/profile.png" class="profile">
+    </div>
+    <v-flex sm10 xs10>
       <v-card outlined>
         <v-card-title class="headline">
           About me
@@ -17,7 +17,7 @@
             I'm Vinícius, a {{ age }}-year-old Full Stack developer from Brazil.
           </p>
           <p>
-            I love building robust and scalable systems on the internet.
+            I love building robust and scalable systems on the Web.
             <br> As a freelancer, I have worked with clients from several countries and helped them bring their solutions to reality.
           </p>
           <p> I am a strong believer in team work and in the power of remote work </p>
@@ -53,7 +53,6 @@ export default {
 
 <style scoped>
     .profile {
-        margin-top: 10em;
         max-height: 30vh;
         border-radius: 50%;
     }

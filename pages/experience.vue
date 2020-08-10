@@ -4,7 +4,7 @@
     justify-center
     align-center
   >
-    <v-flex xs12 sm8>
+    <v-flex xs10 sm10>
       <h1>
         Work Experience
       </h1>
@@ -14,7 +14,7 @@
       </div>
 
       <v-card outlined class="mb-5">
-        <v-card-title class="headline">
+        <v-card-title class="headline" primary-title style="word-break: normal">
           EdEHR (Since December 2019)
         </v-card-title>
         <v-card-text>
@@ -26,7 +26,7 @@
       </v-card>
 
       <v-card outlined class="mb-5">
-        <v-card-title class="headline">
+        <v-card-title class="headline" primary-title style="word-break: normal">
           Karufuka (From July 2019 until November 2019)
         </v-card-title>
         <v-card-text>
@@ -37,7 +37,7 @@
       </v-card>
 
       <v-card outlined class="mb-5">
-        <v-card-title class="headline">
+        <v-card-title class="headline" primary-title style="word-break: normal">
           SportsLog IronMan (From March 2019 until June 2019)
         </v-card-title>
         <v-card-text>
@@ -48,7 +48,7 @@
       </v-card>
 
       <v-card outlined class="mb-5">
-        <v-card-title class="headline">
+        <v-card-title class="headline" primary-title style="word-break: normal">
           Taskeo (From August 2018 until March 2019)
         </v-card-title>
         <v-card-text>
