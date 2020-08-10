@@ -3,10 +3,12 @@
     row
     justify-center
     align-center
+    pa-0
+    ma-0
   >
-    <div class="text-center mb-2">
+    <v-flex lg12 xs12 md12 class="text-center mb-2">
       <img src="/profile.png" class="profile">
-    </div>
+    </v-flex>
     <v-flex sm10 xs10>
       <v-card outlined>
         <v-card-title class="headline">

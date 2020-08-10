@@ -3,6 +3,8 @@
     row
     justify-center
     align-center
+    pa-0
+    ma-0
   >
     <v-flex xs10 sm10>
       <h1 class="mt-10">

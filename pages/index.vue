@@ -4,7 +4,7 @@
     justify-center
     align-center
   >
-    <v-img class="mb-5 hidden-md-and-down" src="/logo.png" lazy-src="" max-width="20vw" max-height="auto" />
+    <v-img class="mb-5 hidden-md-and-down" src="/logo.png" max-width="20vw" max-height="auto" />
     <v-img class="mb-5 hidden-md-and-up" src="/logo.png" max-width="50vw" max-height="auto" />
     <v-flex xs10 sm10>
       <v-card outlined>

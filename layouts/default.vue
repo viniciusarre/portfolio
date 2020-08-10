@@ -1,15 +1,12 @@
 <template>
   <v-app dark>
     <navbar :items="menuItems" />
-    <mobile-navbar :open="mobileDrawer" :items="menuItems" @toggle="mobileDrawer = !mobileDrawer" />
-    <v-app-bar
-
-      class="hidden-md-and-up "
-    >
-      <v-app-bar-nav-icon @click.stop="mobileDrawer = !mobileDrawer" />
-      <v-toolbar-title v-text="title" />
-      <v-spacer />
-    </v-app-bar>
+    <mobile-navbar :open="mobileDrawer" :items="menuItems" @toggle="mobileDrawer = !mobileDrawer">
+      <v-app-bar class="hidden-md-and-up">
+        <v-app-bar-nav-icon @click.stop="mobileDrawer = !mobileDrawer" />
+        <v-toolbar-title v-text="title" />
+      </v-app-bar>
+    </mobile-navbar>
     <v-main>
       <v-container fill-height fill-width fluid>
         <v-row align="center" justify="center">
@@ -61,3 +58,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.app{
+ overflow-x: none
+}
+</style>
