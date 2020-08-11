@@ -6,7 +6,7 @@
     pa-0
     ma-0
   >
-    <v-flex xs10 sm10>
+    <v-flex xs10 sm10 md8 lg8 xl8>
       <h1 class="mt-10">
         Education
       </h1>

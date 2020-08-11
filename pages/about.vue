@@ -9,7 +9,7 @@
     <v-flex lg12 xs12 md12 class="text-center mb-2">
       <img src="/profile.png" class="profile">
     </v-flex>
-    <v-flex sm10 xs10>
+    <v-flex sm10 xs10 lg6 xl6>
       <v-card outlined>
         <v-card-title class="headline">
           About me

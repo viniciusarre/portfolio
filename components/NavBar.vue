@@ -3,7 +3,7 @@
     :mini-variant="true"
     :fixed="true"
     expand-on-hover
-    class="hidden-sm-and-down"
+    class="hidden-md-and-down"
   >
     <v-list class="mt-16">
       <v-list-item

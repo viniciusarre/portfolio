@@ -6,10 +6,19 @@
     pa-0
     ma-0
   >
-    <v-img class="mb-5 hidden-md-and-down" src="/logo.png" max-width="20vw" max-height="auto" />
+    <v-img class="mb-5 hidden-sm-and-down" src="/logo.png" max-width="20vw" max-height="auto" />
     <v-img class="mb-5 hidden-md-and-up" src="/logo.png" max-width="50vw" max-height="auto" />
-    <v-flex xs10 sm10>
-      <v-card outlined>
+    <v-flex
+      xs10
+      sm10
+      md10
+      lg10
+      xl10
+      offset-md3
+      offset-lg3
+      offset-xl3
+    >
+      <v-card outlined class="card">
         <v-card-title class="headline">
           Hello World!
         </v-card-title>
@@ -38,3 +47,14 @@
     </v-flex>
   </v-layout>
 </template>
+
+<style scoped>
+  .card {
+    max-width: 50vw;
+  }
+  @media only screen and (max-width: 960px) {
+    .card {
+      max-width: 100vw;
+    }
+  }
+</style>
