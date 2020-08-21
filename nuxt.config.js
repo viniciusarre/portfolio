@@ -68,6 +68,7 @@ export default {
   */
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
+    treeShake: true,
     theme: {
       dark: true,
       themes: {
@@ -78,7 +79,8 @@ export default {
           info: '#FFFFFF',
           // warning: colors.amber.base,
           // error: colors.deepOrange.accent4,
-          success: '#8BC34A'
+          success: '#8BC34A',
+          fontSize: 16
         }
       }
     }
