@@ -7,7 +7,7 @@
     ma-0
   >
     <v-flex xs10 sm10 md8 lg8 xl8>
-      <h1>
+      <h1 class="mt-10">
         Work Experience
       </h1>
       <div class="mb-4">

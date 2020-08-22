@@ -7,7 +7,7 @@
     ma-0
   >
     <v-flex xs10 sm10 md8 lg8 xl8>
-      <h1 class="mb-4">
+      <h1 class="mt-10 mb-4">
         Open Source projects
       </h1>
       <!-- <v-slide-group multiple show-arrows>
