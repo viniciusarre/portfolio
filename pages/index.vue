@@ -28,10 +28,10 @@
             I hope you will find here the information you need about my career as a Full Stack Web Developer!
           </p>
           <p>
-            Please, feel free to use the menu on the left to navigate to different sessions of the website...
+            Please, feel free to use the menu on the left to navigate to different sections of the website.
           </p>
           <p>
-            If you'd like to reach out, you can talk to me directly using this <a href="mailto:viniciusarre@gmail.com"> E-mail. </a>
+            If you'd like to reach out, you can talk to me at <a href="mailto:viniciusarre@gmail.com"> viniciusarre@gmail.com </a>
           </p>
           <p>
             Furthermore, I am available on
