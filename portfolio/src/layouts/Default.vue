@@ -1,50 +1,66 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
-      </nav>
-    </header>
-    <slot/>
-  </div>
+  <v-app dark>
+    <navbar :items="menuItems" />
+    <mobile-navbar :open="mobileDrawer" :items="menuItems" @toggle="mobileDrawer = !mobileDrawer">
+      <v-app-bar class="hidden-md-and-up">
+        <v-app-bar-nav-icon @click.stop="mobileDrawer = !mobileDrawer" />
+        <v-toolbar-title v-text="title" />
+      </v-app-bar>
+    </mobile-navbar>
+    <v-main>
+      <v-container fill-height fluid>
+        <v-row align="center" justify="center">
+          <slot />
+        </v-row>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
-<static-query>
-query {
-  metadata {
-    siteName
+<script>
+import Navbar from '../components/NavBar'
+import MobileNavbar from '../components/MobileNavBar'
+export default {
+  components: { Navbar, MobileNavbar },
+  data () {
+    return {
+      title: 'Vinícius Arré\'s Portfolio',
+      mobileDrawer: false,
+      menuItems: [
+        {
+          icon: 'mdi-home',
+          title: 'Home',
+          to: '/'
+        },
+        {
+          icon: 'mdi-account',
+          title: 'About',
+          to: '/about'
+        },
+        {
+          icon: 'mdi-domain',
+          title: 'Experience',
+          to: '/experience'
+        },
+        {
+          icon: 'mdi-handshake',
+          title: 'Open Source',
+          to: '/open-source'
+
+        },
+        {
+          icon: 'mdi-book-open-variant',
+          title: 'Education',
+          to: '/education'
+        }
+      ]
+    }
   }
 }
-</static-query>
+</script>
 
-<style>
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
-
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
+<style scoped>
+.app{
+ overflow-x: none
 }
 </style>
