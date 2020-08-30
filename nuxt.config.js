@@ -22,7 +22,7 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/logo.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
   /*
@@ -79,8 +79,7 @@ export default {
           info: '#FFFFFF',
           // warning: colors.amber.base,
           // error: colors.deepOrange.accent4,
-          success: '#8BC34A',
-          fontSize: 16
+          success: '#8BC34A'
         }
       }
     }
