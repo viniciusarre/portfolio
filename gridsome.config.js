@@ -7,21 +7,21 @@
 module.exports = {
   siteName: 'Vinícius Arré\'s portfolio',
   plugins: [
-    // {
-    //   use: '@gridsome/source-filesystem',
-    //   options: {
-    //     path: 'content/**/*.md',
-    //     typeName: 'BlogPost',
-    //     route: '/content/:slug',
-    //     remark: {
-    //       // remark options
-    //     }
-    //   }
-    // }
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/**/*.md',
+        typeName: 'BlogPost',
+        route: '/content/:slug',
+        remark: {
+          // remark options
+        }
+      }
+    }
   ],
-  // transformers: {
-  //   remark: {
-  //     // global remark options
-  //   }
-  // }
+  transformers: {
+    remark: {
+      // global remark options
+    }
+  }
 }
