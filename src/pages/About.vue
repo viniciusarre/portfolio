@@ -8,7 +8,7 @@
       ma-0
     >
       <v-flex lg12 xs12 md12 class="text-center mb-2">
-        <img src="/profile.png" class="profile">
+        <img src="/profile.JPG" class="profile">
       </v-flex>
       <v-flex sm10 xs10 lg6 xl6>
         <v-card outlined>
@@ -58,6 +58,6 @@ export default {
 <style scoped>
     .profile {
         max-height: 30vh;
-        border-radius: 50%;
+        border-radius: 40%;
     }
 </style>
