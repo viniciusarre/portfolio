@@ -1,4 +1,8 @@
-# Default starter for Gridsome
+# About this repo
+
+This repo includes the code for my Web Development portfolio, currently hosted [here](www.viniciusarre.dev). It was built using Gridsome and Vuetify.
+
+# This project was generated using the Gridsome Installer
 
 This is the project you get when you run `gridsome create new-project`.
 
