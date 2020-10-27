@@ -56,6 +56,6 @@ export default {
 <style scoped>
     .profile {
         max-height: 30vh;
-        border-radius: 40%;
+        border-radius: 10%;
     }
 </style>
